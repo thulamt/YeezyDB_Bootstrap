@@ -1,0 +1,206 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <title>Slide</title>
+</head>
+<body>
+<!-- navbar -->
+<nav class="navbar navbar-expand-sm bg-light">
+  <div class="container-fluid">
+    <!-- Links -->
+    <a class="navbar-brand" href="./index_signin.html">
+      <img src="assets/icon.png" alt="Avatar Logo" style="height:40px;" > 
+  </a>
+    <ul class="navbar-nav">
+      
+      <li class="nav-item">
+          <a class="nav-link" href="./models_signin.html">Browse Shoes</a>
+        </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./ratings.html">My Ratings</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" data-bs-toggle="modal" href="#account"><i class="bi bi-person-fill" style="font-size:25;"></i></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="modal fade" id="account" aria-hidden="true" aria-labelledby="accountlabel" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="accountlabel">Hello</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <p>
+            Would you like to sign out of your account?
+          </p>
+      </div>
+      <div class="modal-footer">
+          <div class="btn-group">
+              <a href="./slide.html" data-bs-toggle="modal" class="btn btn-primary">Sign-Out</a>
+              <button class="btn btn-secondary" data-bs-target="#" data-bs-toggle="modal" data-bs-dismiss="modal">Cancel</button>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="container pt-5">
+    <div class="row">
+      <div class="col">
+        <div class="card">
+          <a data-bs-toggle="modal" href="#zoom">
+            <p class="text-primary pt-2" style="text-align: right; font-size: 30px;"><i class="bi bi-zoom-in"></i></p>
+            <img class="card-img-top" src="assets/slide_bone.jpg" alt="Card image">
+          </a>
+          <div class="card-body">
+            <p class="h3">Slide</p>
+            <div class="row">
+              <div class="col"><p class="h5">Bone</p></div>
+              <div class="col"><button type="button" class="btn btn-primary" data-bs-toggle="modal" href="#analytics">View Ratings</button>
+              </div>
+            </div>
+            <div class="row pt-3">
+              <div class="col">
+                <p class="h6">Retail Price</p>
+                <p class="h6">Recommended Sizing</p>
+                <p class="h6">Purchase Link</p>
+              </div>
+              <div class="col">
+                <p class="h6">$55 USD</p>
+                <p class="h6">Full Size Up</p>
+                <a class="nav-link" href="https://www.ebay.ca/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313&_nkw=yeezy+slide&_sacat=0">
+                  <img class="img-fluid" src="assets/ebay.png" style="max-width:30%;" alt="ebay" ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="container">
+          <div class="card">
+            <div class="card-header">
+              <p class="card-title">Description:</p>
+            </div>
+            <div class="card-body">
+              <p class="card-text">"The Yeezy Slide Bone features a triple-Bone EVA foam upper with the stark white color of Bone 
+                covering the entirety of the silhouette in one monochromatic hue that goes from the single, wide sandal strap down
+                 to the unique sole of the shoe. From there, the deep footbed uses the same plush foam EVA for comfort,
+                  and the outsole features a toothy construction that is intended to make the sandals rugged enough for different weather conditions, 
+                with the look finishing up using a small adidas logo on the heel to complete the design.
+                </p>
+                <p class="card-text">
+                  The Yeezy Slide Bone released in December of 2019 and retailed for $55."
+                  </p>
+                </p>
+                <p class="card-text">
+                  -StockX
+                </p>
+            </div>
+          </div>
+          <form>
+          <div class="container-fluid pt-2">
+            <div class="mb-3 pt-3">
+              <label for="review" class="form-label">Reviews:</label>
+              <div class="row pt-1 pb-2">
+                <div class="col-1"><a class="likebtn" href="#"><i class="bi bi-hand-thumbs-up"></i></a></div>
+                <div class="col-1"><a class="dislikebtn" href="#"><i class="bi bi-hand-thumbs-down"></i></a></div>
+              </div>
+              <input type="review" class="form-control" id="rvw" placeholder="Enter review here..." name="rvw">
+            </div>
+            <div class="form-check mb-3">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" name="anonymous"> Post as anonymous
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+          </div>
+          <div class="container-fluid pt-2">
+                <div class="row">
+                  <div class="col">
+                    <p class="h6">User 2</p>
+                  </div>
+                  <div class="col">
+                    <p class="h6">posted 1 day ago</p>
+                  </div>
+                  <div class="col" style="text-align: right; font-size: 20px;">
+                    <p class="text-primary"><i class="bi bi-hand-thumbs-up-fill"></i></p>
+                  </div>
+                </div>
+                <p>Most comfortable slide I have in my collection.</p>
+          </div>
+          <div class="container-fluid pt-2">
+            <div class="row">
+              <div class="col">
+                <p class="h6">Anonymous user</p>
+              </div>
+              <div class="col">
+                <p class="h6">posted 4 days ago</p>
+              </div>
+              <div class="col" style="text-align: right; font-size: 20px;">
+                <p class="text-primary"><i class="bi bi-hand-thumbs-down-fill"></i></p>
+              </div>
+            </div>
+            <p>Prison slides.</p>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="zoom" aria-hidden="true" aria-labelledby="zoomlabel" tabindex="-1">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="zoomlabel"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img class="img-fluid" src="assets/slide_bone.jpg" alt="zoom" >
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="modal fade" id="analytics" aria-hidden="true" aria-labelledby="analyticslabel" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="analyticslabel">Model Analytics</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col">
+                <p>Reviews:</p>
+                <p>Likes <i class="bi bi-hand-thumbs-up"></i>:</p>
+                <p>Dislikes <i class="bi bi-hand-thumbs-down"></i>:</p>
+              </div>
+              <div class="col">
+                <p>15</p>
+                <p>9</p>
+                <p>6</p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

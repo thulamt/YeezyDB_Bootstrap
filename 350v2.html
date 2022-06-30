@@ -1,0 +1,247 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <title>350 V2</title>
+</head>
+<body>
+<!-- navbar -->
+<nav class="navbar navbar-expand-sm bg-light">
+  <div class="container-fluid">
+    <!-- Links -->
+    <a class="navbar-brand" href="./index.html">
+      <img src="assets/icon.png" alt="Avatar Logo" style="height:40px;" > 
+  </a>
+    <ul class="navbar-nav">
+      
+      <li class="nav-item">
+          <a class="nav-link" href="./models.html">Browse Shoes</a>
+        </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="modal" href="#login">My Ratings</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" data-bs-toggle="modal" href="#login"><i class="bi bi-person" style="font-size:25;"></i></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="modal fade" id="login" aria-hidden="true" aria-labelledby="loginlabel" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="loginlabel">Create or sign in to an account to post reviews</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <div class="input-group mb-3">
+              <span class="input-group-text">Email Address:</span>
+              <input type="text" class="form-control" placeholder="JohnDoe@email.com">
+          </div>
+          <div class="input-group mb-3">
+              <span class="input-group-text">Password:</span>
+              <input type="text" class="form-control" placeholder="******">
+          </div>
+      </div>
+      <div class="modal-footer">
+          <div class="btn-group">
+              <button class="btn btn-primary" data-bs-target="#signup" data-bs-toggle="modal" data-bs-dismiss="modal">Create New Account</button>
+              <a href="./350v2_signin.html" data-bs-toggle="modal" class="btn btn-primary">Log-In</a>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="signup" aria-hidden="true" aria-labelledby="signupLabel" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="signupLabel">Create new account</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <div class="input-group mb-3">
+            <span class="input-group-text">Enter Name:</span>
+            <input type="text" class="form-control" placeholder="First Name">
+            <input type="text" class="form-control" placeholder="Last Name">
+          </div>
+          <div class="input-group mb-3">
+            <span class="input-group-text">Email Address:</span>
+            <input type="text" class="form-control" placeholder="JohnDoe@email.com">
+          </div>
+          <div class="input-group mb-3">
+              <span class="input-group-text">Password:</span>
+              <input type="text" class="form-control" placeholder="******">
+          </div>
+          <div class="input-group mb-3">
+            <span class="input-group-text">Confirm Password:</span>
+            <input type="text" class="form-control" placeholder="******">
+          </div>
+      </div>
+      <div class="modal-footer">
+          <div class="btn-group">
+            <a href="./350v2_signin.html" data-bs-toggle="modal" class="btn btn-primary">Create New Account</a>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="container pt-5">
+    <div class="row">
+      <div class="col">
+        <div class="card">
+          <a data-bs-toggle="modal" href="#zoom">
+            <p class="text-primary pt-2" style="text-align: right; font-size: 30px;"><i class="bi bi-zoom-in"></i></p>
+            <img class="card-img-top" src="assets/350v2_beluga.jpg" alt="Card image">
+          </a>
+          <div class="card-body">
+            <p class="h3">Yeezy Boost 350 V2</p>
+            <div class="row">
+              <div class="col"><p class="h5">Beluga</p></div>
+              <div class="col"><button type="button" class="btn btn-primary" data-bs-toggle="modal" href="#analytics">View Ratings</button>
+              </div>
+            </div>
+            <div class="row pt-3">
+              <div class="col">
+                <p class="h6">Retail Price</p>
+                <p class="h6">Recommended Sizing</p>
+                <p class="h6">Purchase Link</p>
+              </div>
+              <div class="col">
+                <p class="h6">$220 USD</p>
+                <p class="h6">Half Size Up</p>
+                <a class="nav-link" href="https://www.ebay.ca/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313&_nkw=yeezy+350+v2&_sacat=0">
+                  <img class="img-fluid" src="assets/ebay.png" style="max-width:30%;" alt="ebay" ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="container">
+          <div class="card">
+            <div class="card-header">
+              <p class="card-title">Description:</p>
+            </div>
+            <div class="card-body">
+              <p class="card-text">"The adidas Yeezy 350 Boost V2 takes the silhouette that Kanye West made famous for adidas Originals and gives it new life. 
+                The Yeezy Boost releases have been some of the most notable driving forces in the resurgence of adidas' popularity around the world. 
+                The low top Yeezy Boost 350 features a full length Boost cushioning system and a high end feel that has made it the go-to sneaker for everyone 
+                from celebrities like Kim Kardashian-West, Jay-Z, 2 Chainz and Future, as well as for athletes like Nick "Swaggy P" Young, 
+                Andrew Wiggins, Lewis Hamilton and anyone else who can get their feet in a pair. The Yeezy Boost 350 V2 adds a bold twist to 
+                Kanye's design with a bright orange (officially Solar Red) stripe across the Steel Grey/Beluga zebra-striped upper with the text YZY SPLY.</p>
+                <p class="card-text">
+                  The Steeple Gray/Beluga/Solar Red adidas Yeezy Boost 350 V2 is the first of the 2nd version colorways that release in 2016."
+                  </p>
+                </p>
+                <p class="card-text">
+                  -StockX
+                </p>
+            </div>
+          </div>
+          <form>
+          <div class="container-fluid pt-2">
+            <div class="mb-3 pt-3">
+              <label for="review" class="form-label">Reviews:</label>
+              <div class="row pt-1 pb-2">
+                <div class="col-1"><a class="likebtn" href="#"><i class="bi bi-hand-thumbs-up"></i></a></div>
+                <div class="col-1"><a class="dislikebtn" href="#"><i class="bi bi-hand-thumbs-down"></i></a></div>
+              </div>
+              <input type="review" class="form-control" id="rvw" placeholder="Enter review here..." name="rvw">
+            </div>
+            <div class="form-check mb-3">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" name="anonymous"> Post as anonymous
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+          </div>
+          <div class="container-fluid pt-2">
+                <div class="row">
+                  <div class="col">
+                    <p class="h6">User 2</p>
+                  </div>
+                  <div class="col">
+                    <p class="h6">posted 2 day ago</p>
+                  </div>
+                  <div class="col" style="text-align: right; font-size: 20px;">
+                    <p class="text-primary"><i class="bi bi-hand-thumbs-up-fill"></i></p>
+                  </div>
+                </div>
+                <p>Most comfortable shoe I have in my collection.</p>
+          </div>
+          <div class="container-fluid pt-2">
+            <div class="row">
+              <div class="col">
+                <p class="h6">Anonymous user</p>
+              </div>
+              <div class="col">
+                <p class="h6">posted 3 days ago</p>
+              </div>
+              <div class="col" style="text-align: right; font-size: 20px;">
+                <p class="text-primary"><i class="bi bi-hand-thumbs-down-fill"></i></p>
+              </div>
+            </div>
+            <p>V1s are better.</p>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="zoom" aria-hidden="true" aria-labelledby="zoomlabel" tabindex="-1">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="zoomlabel"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img class="img-fluid" src="assets/350v2_beluga.jpg" alt="zoom" >
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="modal fade" id="analytics" aria-hidden="true" aria-labelledby="analyticslabel" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="analyticslabel">Model Analytics</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col">
+                <p>Reviews:</p>
+                <p>Likes <i class="bi bi-hand-thumbs-up"></i>:</p>
+                <p>Dislikes <i class="bi bi-hand-thumbs-down"></i>:</p>
+              </div>
+              <div class="col">
+                <p>28</p>
+                <p>24</p>
+                <p>4</p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <title>Models</title>
+</head>
+<body>
+<!-- navbar -->
+<nav class="navbar navbar-expand-sm bg-light">
+  <div class="container-fluid">
+    <!-- Links -->
+    <a class="navbar-brand" href="./index.html">
+      <img src="assets/icon.png" alt="Avatar Logo" style="height:40px;" > 
+  </a>
+    <ul class="navbar-nav">
+      
+      <li class="nav-item">
+          <a class="nav-link" href="./models.html">Browse Shoes</a>
+        </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="modal" href="#login">My Ratings</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" data-bs-toggle="modal" href="#login"><i class="bi bi-person" style="font-size:25;"></i></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="modal fade" id="login" aria-hidden="true" aria-labelledby="loginlabel" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="loginlabel">Create or sign in to an account to post reviews</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <div class="input-group mb-3">
+              <span class="input-group-text">Email Address:</span>
+              <input type="text" class="form-control" placeholder="JohnDoe@email.com">
+          </div>
+          <div class="input-group mb-3">
+              <span class="input-group-text">Password:</span>
+              <input type="text" class="form-control" placeholder="******">
+          </div>
+      </div>
+      <div class="modal-footer">
+          <div class="btn-group">
+              <button class="btn btn-primary" data-bs-target="#signup" data-bs-toggle="modal" data-bs-dismiss="modal">Create New Account</button>
+              <a href="./models_signin.html" data-bs-toggle="modal" class="btn btn-primary">Log-In</a>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="signup" aria-hidden="true" aria-labelledby="signupLabel" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="signupLabel">Create new account</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <div class="input-group mb-3">
+            <span class="input-group-text">Enter Name:</span>
+            <input type="text" class="form-control" placeholder="First Name">
+            <input type="text" class="form-control" placeholder="Last Name">
+          </div>
+          <div class="input-group mb-3">
+            <span class="input-group-text">Email Address:</span>
+            <input type="text" class="form-control" placeholder="JohnDoe@email.com">
+          </div>
+          <div class="input-group mb-3">
+              <span class="input-group-text">Password:</span>
+              <input type="text" class="form-control" placeholder="******">
+          </div>
+          <div class="input-group mb-3">
+            <span class="input-group-text">Confirm Password:</span>
+            <input type="text" class="form-control" placeholder="******">
+          </div>
+      </div>
+      <div class="modal-footer">
+          <div class="btn-group">
+            <a href="./models_signin.html" data-bs-toggle="modal" class="btn btn-primary">Create New Account</a>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="container pt-5 my-4">
+    <div class="row">
+        <div class="col">
+            <a href="./350v1.html" class="text-decoration-none">
+                <div class="card border-0" style="width:400px; height:400px;">
+                    <img class="card-img-top" src="assets/350v1_turtledove.jpg" style="padding-top: 20px" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title text-center">350 V1</h4>
+                    </div>
+                </div>
+            </a>
+            <a href="./slide.html" class="text-decoration-none">
+              <div class="card border-0" style="width:400px; height:400px;">
+                <img class="card-img-top" src="assets/slide_bone.jpg" alt="Card image">
+                <div class="card-body">
+                    <h4 class="card-title text-center">Slide</h4>
+                </div>
+              </div>
+            </a>
+        </div>
+        <div class="col" >
+            <a href="./350v2.html" class="text-decoration-none">
+            <div class="card border-0" style="width:400px; height:400px;">
+                <img class="card-img-top" src="assets/350v2_beluga.jpg" alt="Card image">
+                <div class="card-body">
+                    <h4 class="card-title text-center">350 V2</h4>
+                </div>
+              </div>
+            </a>
+            <a href="./foamrnnr.html" class="text-decoration-none">
+                <div class="card border-0" style="width:400px; height:400px;">
+                    <img class="card-img-top" src="assets/foamrnnr_ararat.png" style="padding-top: 45px" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title text-center">Foam RNNR</h4>
+                    </div>
+                  </div>
+            </a>
+              
+        </div>
+        <div class="col">
+            <a href="./700v1.html" class="text-decoration-none">
+                <div class="card border-0" style="width:400px; height:400px;" >
+                    <img class="card-img-top" src="assets/700v1_waverunner.jpg" style="padding-top: 15px" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title text-center">700 V1</h4>
+                  </div>
+            </div>
+            </a>
+            
+    </div>
+  </div>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

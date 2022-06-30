@@ -1,0 +1,130 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <title>YeezyDB</title>
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-sm bg-light">
+    <div class="container-fluid">
+      <!-- Links -->
+      <a class="navbar-brand" href="./index.html">
+        <img src="assets/icon.png" alt="Avatar Logo" style="height:40px;" > 
+    </a>
+      <ul class="navbar-nav">
+        
+        <li class="nav-item">
+            <a class="nav-link" href="./models.html">Browse Shoes</a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" data-bs-toggle="modal" href="#login">My Ratings</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="modal" href="#login"><i class="bi bi-person" style="font-size:25;"></i></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="modal fade" id="login" aria-hidden="true" aria-labelledby="loginlabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginlabel">Create or sign in to an account to post reviews
+            </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="input-group mb-3">
+                <span class="input-group-text">Email Address:</span>
+                <input type="text" class="form-control" placeholder="JohnDoe@email.com">
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text">Password:</span>
+                <input type="text" class="form-control" placeholder="******">
+            </div>
+        </div>
+        <div class="modal-footer">
+            <div class="btn-group">
+                <button class="btn btn-primary" data-bs-target="#signup" data-bs-toggle="modal" data-bs-dismiss="modal">Create New Account</button>
+                <a href="./index_signin.html" data-bs-toggle="modal" class="btn btn-primary">Log-In</a>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="signup" aria-hidden="true" aria-labelledby="signupLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="signupLabel">Create new account</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="input-group mb-3">
+              <span class="input-group-text">Enter Name:</span>
+              <input type="text" class="form-control" placeholder="First Name">
+              <input type="text" class="form-control" placeholder="Last Name">
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text">Email Address:</span>
+              <input type="text" class="form-control" placeholder="JohnDoe@email.com">
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text">Password:</span>
+                <input type="text" class="form-control" placeholder="******">
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text">Confirm Password:</span>
+              <input type="text" class="form-control" placeholder="******">
+            </div>
+        </div>
+        <div class="modal-footer">
+            <div class="btn-group">
+              <a href="./index_signin.html" data-bs-toggle="modal" class="btn btn-primary">Create New Account</a>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <img class="img-fluid" src="assets/icon.png" alt="Icon" >
+            <div class="row">
+                <p class="h3  pt-5">All Yeezy shoe models in your hands</p>
+                <p class="h4 pt-3 pb-3">Review the archive and legacy of YEEZY!</p>
+            </div>
+            <a href="./models.html">
+                <div class="container-fluid p-4 my-4 bg-primary text-white" style="border-radius: 50px;">
+                        <h1 class="text-center">View Yeezy Models</h1>                
+                </div>
+            </a>
+        </div>
+        <div class="col-sm-6">
+            <a href="./700v1.html">
+                <img class="img-fluid" src="assets/700v1_waverunner.jpg" alt="yeezyoftheday" >
+            </a>
+            <p class="h4 text-center pt-2">Yeezy of the Day</p>
+            <p class="h4 text-center pt-2">Yeezy Boost 700 V1: Waverunner</p>
+        </div>
+    </div>
+  </div>
+
+
+
+  
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
